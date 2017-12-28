@@ -1,15 +1,19 @@
 module Nav exposing (..)
 
-import Element exposing (Element, button, el, text)
+import Element exposing (Element, button, el, row, text)
 import Html exposing (Html)
 import Model exposing (Model)
 import Msg exposing (..)
-import Styles
+import Styles as Styles
+import Styles.Nav as Nav
 
 
-navView : Model -> Html Msg
+navView : Model -> Element Styles.Styles variation Msg
 navView model =
-    el
-        Styles.NavBar
+    row Styles.NavBar
         []
-        (text "Clickstastic!")
+        [ el
+            (Styles.Nav Nav.Link)
+            []
+            (text "Clickstastic!")
+        ]

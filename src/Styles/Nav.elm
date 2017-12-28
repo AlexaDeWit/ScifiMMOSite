@@ -2,9 +2,22 @@ module Styles.Nav exposing (..)
 
 import Color exposing (lightGrey, rgba)
 import Style.Color as Color
+import Style.Font as Font
 
 
-stylesheet =
+type NavStyles
+    = Logo
+    | Link
+
+
+navRow =
     [ Color.background <| rgba 33 14 178 1
     , Color.text lightGrey
+    ]
+
+
+navLink =
+    [ Color.background <| rgba 33 14 178 1
+    , Color.text lightGrey
+    , Font.underline
     ]

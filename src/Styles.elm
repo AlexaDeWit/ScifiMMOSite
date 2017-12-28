@@ -8,10 +8,12 @@ import Styles.Nav as Nav
 type Styles
     = NavBar
     | Button
+    | Nav Nav.NavStyles
 
 
 stylesheet =
     Style.styleSheet
-        [ style NavBar Nav.stylesheet
+        [ style NavBar Nav.navRow
         , style Button Button.stylesheet
+        , style (Nav Nav.Link) Nav.navLink
         ]
