@@ -9,4 +9,7 @@ import Styles
 
 navView : Model -> Html Msg
 navView model =
-    el Styles.NavBar [] (text "Clickstastic!")
+    el
+        Styles.NavBar
+        []
+        (text "Clickstastic!")
