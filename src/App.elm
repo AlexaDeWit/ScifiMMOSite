@@ -1,8 +1,9 @@
 module App exposing (..)
 
-import Element exposing (..)
+import Element exposing (Element, el, text)
 import Html exposing (Attribute, Html)
-import Style exposing (..)
+import Style
+import Styles.Button exposing (..)
 
 
 type alias Model =
@@ -29,7 +30,8 @@ update msg model =
 
 view : Model -> Html Msg
 view model =
-    Html.text "Hello World"
+    Element.layout stylesheet <|
+        el Button [] (text "Clickstastic!")
 
 
 subscriptions : Model -> Sub Msg
