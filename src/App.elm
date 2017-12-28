@@ -1,13 +1,9 @@
 module App exposing (..)
 
-import Element exposing (Element, el, text)
 import Html exposing (Attribute, Html)
-import Style
-import Styles.Button exposing (..)
-
-
-type alias Model =
-    {}
+import Model exposing (Model)
+import Msg exposing (..)
+import View exposing (view)
 
 
 init : ( Model, Cmd Msg )
@@ -17,21 +13,11 @@ init =
     )
 
 
-type Msg
-    = NoOp
-
-
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         NoOp ->
             ( model, Cmd.none )
-
-
-view : Model -> Html Msg
-view model =
-    Element.layout stylesheet <|
-        el Button [] (text "Clickstastic!")
 
 
 subscriptions : Model -> Sub Msg
