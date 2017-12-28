@@ -1,6 +1,6 @@
 module App exposing (..)
 
-import Html exposing (Attribute, Html)
+import Html exposing (Html)
 import Model exposing (Model)
 import Msg exposing (..)
 import View exposing (view)

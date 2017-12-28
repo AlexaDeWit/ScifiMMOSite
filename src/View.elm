@@ -1,11 +1,11 @@
 module View exposing (..)
 
 import Element exposing (Element, button, el, text)
-import Html exposing (Attribute, Html)
+import Html exposing (Html)
 import Model exposing (Model)
 import Msg exposing (..)
 import Style
-import Styles.Button exposing (..)
+import Styles exposing (..)
 
 
 view : Model -> Html Msg
