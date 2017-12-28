@@ -1,6 +1,8 @@
 module App exposing (..)
 
+import Element exposing (..)
 import Html exposing (Attribute, Html)
+import Style exposing (..)
 
 
 type alias Model =
