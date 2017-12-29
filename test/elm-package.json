@@ -1,10 +1,11 @@
 {
     "version": "1.0.0",
-    "summary": "Development block for the ScifiMMO",
+    "summary": "Development block for the ScifiMMO, Tests",
     "repository": "https://github.com/AlexaDeWit/scifimmosite.git",
     "license": "BSD3",
     "source-directories": [
-        "src"
+        ".",
+		"../src"
     ],
     "exposed-modules": [],
     "dependencies": {
