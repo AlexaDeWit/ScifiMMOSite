@@ -1,6 +1,6 @@
 module Nav exposing (..)
 
-import Element exposing (Element, button, el, row, text)
+import Element exposing (Element, button, el, image, row, text)
 import Html exposing (Html)
 import Model exposing (Model)
 import Msg exposing (..)
@@ -12,7 +12,11 @@ navView : Model -> Element Styles.Styles variation Msg
 navView model =
     row Styles.NavBar
         []
-        [ el
+        [ image
+            (Styles.Nav Nav.Image)
+            []
+            { src = "/assets/Creative_commons.jpg", caption = "Logo" }
+        , el
             (Styles.Nav Nav.Link)
             []
             (text "Clickstastic!")

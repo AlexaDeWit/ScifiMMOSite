@@ -16,4 +16,5 @@ stylesheet =
         [ style NavBar Nav.navRow
         , style Button Button.stylesheet
         , style (Nav Nav.Link) Nav.navLink
+        , style (Nav Nav.Image) Nav.navImage
         ]

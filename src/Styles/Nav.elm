@@ -8,6 +8,7 @@ import Style.Font as Font
 type NavStyles
     = Logo
     | Link
+    | Image
 
 
 navRow =
@@ -21,3 +22,7 @@ navLink =
     , Color.text lightGrey
     , Font.underline
     ]
+
+
+navImage =
+    []
